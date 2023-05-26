@@ -7,7 +7,6 @@ const CampsiteCard = ({ campsite }) => {
         <Link to={`${id}`}>
             <Card>
                 <CardImg width='100%' src={image} alt={name} />
-                    alt={props.campsite.name}
                 <CardImgOverlay>
                     <CardTitle>{name}</CardTitle>
                 </CardImgOverlay> 
