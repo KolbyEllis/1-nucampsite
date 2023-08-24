@@ -11,7 +11,7 @@ const DisplayList = () => {
         selectFeaturedPromotion(state),
         selectFeaturedPartner(state)
     ]);
-
+    
     return (
         <Row>
             {items.map((item, idx) => {

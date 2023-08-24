@@ -5,7 +5,7 @@ const initialState = {
     partnersArray: PARTNERS
 };
 
-const partnersSlice = createSlice ({
+const partnersSlice = createSlice({
     name: 'partners',
     initialState
 });
@@ -16,6 +16,6 @@ export const selectAllPartners = (state) => {
     return state.partners.partnersArray;
 };
 
-export const selectFeaturedPartner = () => {
-    return PARTNERS.find(partner => partner.featured);
+export const selectFeaturedPartner = (state) => {
+    return state.partners.partnersArray.find((partner) => partner.featured);
 };
